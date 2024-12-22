@@ -1,0 +1,169 @@
+.booksWrapper {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.book {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(143, 143, 143);
+    border-radius: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 16px;
+    font-family: sans-serif;
+    transition: .4s;
+}
+
+.book:hover h1 {
+    color: rgb(219, 29, 146);
+    transition: .4s;
+}
+
+.book>.bookImg {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.book>.bookImg>img {
+    width: 150px;
+    object-position: center;
+    width: auto;
+    transition: .5s;
+}
+
+.book>.bookImg:hover img {
+    transform: scale(1.075);
+    transition: .5s;
+}
+
+.book>.content {
+    padding: 15px;
+}
+
+.content {}
+
+.bookImg {}
+
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 800px;
+    border: 1px solid rgb(184, 184, 184);
+    box-shadow: 0 0 15px gainsboro;
+    height: 500px;
+    overflow: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.modal::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 5px;
+    background-color: transparent;
+}
+.modal::-webkit-scrollbar-thumb {
+    background-color: rgb(55, 14, 133);
+}
+
+.closeBtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 50%;
+    border: none;
+    padding: 10px 13px;
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.closeBtn:hover {
+    transform: scale(1.065);
+    transition: .5s;
+}
+
+.modalWrapper {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+
+.modalLeft {
+    width: 50%;
+}
+
+.modalLeft img {
+    width: fit-content;
+    width: 70%;
+}
+
+.modalRight {
+    font-family: sans-serif;
+    width: 50%;
+}
+
+.modalRight h1 {
+    color: rgb(219, 29, 146);
+    margin-bottom: 10px;
+}
+
+.modalRight h4 {
+    margin: 10px 0;
+}
+
+.modalRight p {
+    height: 300px;
+    overflow: auto;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: 3px;
+
+}
+.previous{
+    text-decoration: none;
+    color: black;
+    float: right;
+    padding: 5px 8px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.detail{
+    color: black;
+    padding: 7px 12px;
+    background-color: rgb(19, 122, 24);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+.detail:hover, .previous:hover{
+    opacity: .6;
+    transition: .4s;
+}

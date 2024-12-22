@@ -1,0 +1,47 @@
+.home__left,
+.home__right {}
+
+.inputSearch {
+    padding: 15px 100px 15px 15px;
+    border: none;
+    border-radius: 20px;
+    transition: .4s;
+    border: 1px solid rgb(219, 29, 146);
+    box-shadow: 0 0 35px rgba(219, 29, 146, 1);
+}
+
+.inputSearch:hover {
+    transform: scale(1.045);
+    transition: .4s;
+    box-shadow: 0 0 35px rgba(219, 29, 146, 0);
+}
+
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 60px auto 0;
+}
+
+.inputSearch:focus {
+    outline: none;
+    color: rgb(219, 29, 146);
+}
+
+@media(max-width: 1000px) {
+    .home {
+        justify-content: center;
+    }
+
+    .title {
+        width: 100% !important;
+    }
+
+    .home__left {
+        text-align: center;
+
+    }
+}

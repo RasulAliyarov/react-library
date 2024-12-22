@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.activeLink {
+    background-color: rgb(219, 29, 146);
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255) !important;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 20px;
+
+}
+
+.logo {
+    letter-spacing: 2px;
+    color: rgb(219, 29, 146);
+    font-weight: 800;
+    margin: 0;
+    font-size: 22px;
+}
+
+.left {
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
